@@ -24,7 +24,15 @@ const User = sequelize.define('User', {
         type: DataTypes.ENUM('vendedor', 'comprador'),
         allowNull: false,
         defaultValue: 'comprador',
-    },
+    }
+    // telefone: {
+    //     type: DataTypes.STRING,
+    //     allowNull: true,
+    // },
+    // genero: {
+    //     type: DataTypes.ENUM('masculino', 'feminino', 'outro'),
+    //     allowNull: true,
+    // },
 }, {
     timestamps: true,
 });

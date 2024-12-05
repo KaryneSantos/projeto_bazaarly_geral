@@ -39,7 +39,6 @@ app.use('/user', userProfileRouter);
 const signVendedorRouter = require('./router/sign_vendedor');
 app.use('/signup_vendendor', signVendedorRouter);
 
-
 // Rotas de produtos
 const sapatoRouter = require('./router/sapato');
 app.use('/sapato', sapatoRouter);
@@ -70,6 +69,8 @@ app.use('/tecnologia', tecnologiaRouter);
 
 const livrosRouter = require('./router/livros');
 app.use('/livros', livrosRouter);
+
+
 
 
 const port = process.env.port || 3000;

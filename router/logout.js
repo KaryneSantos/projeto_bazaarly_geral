@@ -13,7 +13,7 @@ router.use(
 
 router.get('/', (req, res) => {
   req.session = null;
-  res.redirect('login');
+  res.render('login');
 });
 
 
